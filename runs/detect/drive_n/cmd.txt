@@ -1,0 +1,16 @@
+python detectdist.py --source data/images/drive --weights best_nano.pt --name drive_n --conf-thres 0.4 --save-txt --save-conf
+detectdist: weights=['best_nano.pt'], source=data/images/drive, imgsz=[640, 640], conf_thres=0.4, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=True, save_conf=True, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=runs\detect, name=drive_n, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False
+YOLOv5  v6.1-0-g3752807 torch 1.10.0+cu113 CUDA:0 (NVIDIA GeForce GTX 1080, 8192MiB)
+
+Fusing layers...
+Model Summary: 213 layers, 1772695 parameters, 0 gradients, 4.2 GFLOPs
+Calibration file found. Loading...
+image 1/6 C:\Users\dmidr\DP\DP_YOLOdist\data\images\drive\drive0.png: 384x640 1 Car, 1 Bus, 1 Truck, 1 T_sign, Done. (0.310s)
+image 2/6 C:\Users\dmidr\DP\DP_YOLOdist\data\images\drive\drive1.png: 384x640 1 Car, 1 Bus, 1 Truck, 1 T_sign, 384x640 5 Cars, 1 Truck, 3 T_lights, 1 T_sign, Done. (0.009s)
+image 3/6 C:\Users\dmidr\DP\DP_YOLOdist\data\images\drive\drive2.png: 384x640 1 Car, 1 Bus, 1 Truck, 1 T_sign, 384x640 5 Cars, 1 Truck, 3 T_lights, 1 T_sign, 384x640 7 Cars, 2 T_signs, Done. (0.009s)
+image 4/6 C:\Users\dmidr\DP\DP_YOLOdist\data\images\drive\drive3.png: 384x640 1 Car, 1 Bus, 1 Truck, 1 T_sign, 384x640 5 Cars, 1 Truck, 3 T_lights, 1 T_sign, 384x640 7 Cars, 2 T_signs, 384x640 1 Rider, 2 Cars, 1 Motorcycle, 3 T_signs, Done. (0.008s)
+image 5/6 C:\Users\dmidr\DP\DP_YOLOdist\data\images\drive\drive4.png: 384x640 1 Car, 1 Bus, 1 Truck, 1 T_sign, 384x640 5 Cars, 1 Truck, 3 T_lights, 1 T_sign, 384x640 7 Cars, 2 T_signs, 384x640 1 Rider, 2 Cars, 1 Motorcycle, 3 T_signs, 384x640 2 Cars, 1 Truck, 2 T_lights, 2 T_signs, Done. (0.009s)
+image 6/6 C:\Users\dmidr\DP\DP_YOLOdist\data\images\drive\drive5.png: 384x640 1 Car, 1 Bus, 1 Truck, 1 T_sign, 384x640 5 Cars, 1 Truck, 3 T_lights, 1 T_sign, 384x640 7 Cars, 2 T_signs, 384x640 1 Rider, 2 Cars, 1 Motorcycle, 3 T_signs, 384x640 2 Cars, 1 Truck, 2 T_lights, 2 T_signs, 384x640 3 Cars, 2 Buss, Done. (0.009s)
+Speed: 0.8ms pre-process, 59.1ms inference, 2.2ms NMS, 390.3ms depth per image at shape (1, 3, 640, 640)
+Results saved to runs\detect\drive_n
+6 labels saved to runs\detect\drive_n\labels
