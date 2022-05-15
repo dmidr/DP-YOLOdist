@@ -275,7 +275,7 @@ def run(weights=ROOT / 'yolov5s.pt',  # model.pt path(s)
 
     # Run inference
     model.warmup(imgsz=(1, 3, *imgsz), half=half)  # warmup
-    dt, seen, s = [0.0, 0.0, 0.0, 0.0], 0, ''
+    dt, seen = [0.0, 0.0, 0.0, 0.0], 0
     for path, im, im0s, vid_cap in dataset:  # !!! im needs to be split in utils.datasets class to be resized correctly
         t1 = time_sync()
         imstereo = im0s  # save stereo images for distance estimation
@@ -333,16 +333,16 @@ def run(weights=ROOT / 'yolov5s.pt',  # model.pt path(s)
             dist = np.flip(dist)
         #return 0
 
-        dt[3] += time_sync() - t4
+        t5 = time_sync()
+        dt[3] += t5 - t4
 
         # Process predictions
         for i, det in enumerate(pred):  # per image
             seen += 1
             if webcam:  # batch_size >= 1
-                p, im0, frame = path[i], im0s[i].copy(), dataset.count
-                s += f'{i}: '
+                p, s, im0, frame = path[i], f'{i}: ', im0s[i].copy(), dataset.count
             else:
-                p, im0, frame = path, im0s.copy(), getattr(dataset, 'frame', 0)
+                p, s, im0, frame = path, '', im0s.copy(), getattr(dataset, 'frame', 0)
 
             p = Path(p)  # to Path
             save_path = str(save_dir / p.name)  # im.jpg
@@ -386,7 +386,7 @@ def run(weights=ROOT / 'yolov5s.pt',  # model.pt path(s)
                     index_dist += 1
 
             # Print time (inference-only)
-            LOGGER.info(f'{s}Done. ({t3 - t2:.3f}s)')
+            LOGGER.info(f'{s}Done. (det: {t3 - t2:.3f} s, dist: {t5-t4:.3f} s)')
 
             # Stream results
             im0 = annotator.result()

@@ -223,9 +223,8 @@ class LoadImages:
 
         img = np.zeros(img0.shape)
 
-        # Get only left image for inference if stereo (image wider than roughly 16:9)
-        if int(img0.shape[1]/img0.shape[0]) >= 2:
-            img = np.split(img0, 2, axis=1)[0]
+        # Get only left image for inference
+        img = np.split(img0, 2, axis=1)[0]
 
         # Padded resize
         img = letterbox(img, self.img_size, stride=self.stride, auto=self.auto)[0]
@@ -364,9 +363,8 @@ class LoadStreams:
         # Letterbox
         img0 = self.imgs.copy()
 
-        # Get only left image for inference if stereo (image wider than roughly 16:9)
-        if int(img0[0].shape[1]/img0[0].shape[0]) >= 2:
-            img = [np.split(x, 2, axis=1)[0] for x in img0]
+        # Get only left image for inference
+        img = [np.split(x, 2, axis=1)[0] for x in img0]
 
         img = [letterbox(x, self.img_size, stride=self.stride, auto=self.rect and self.auto)[0] for x in img]
 
