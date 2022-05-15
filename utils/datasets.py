@@ -318,9 +318,7 @@ class LoadStreams:
             w = 2560  #int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
             h = 720  #int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
             self.fps[i] = 30  # max(cap.get(cv2.CAP_PROP_FPS) % 100, 0) or 10.0  # 10 FPS fallback
-            print(self.fps[i])
             self.frames[i] = max(int(cap.get(cv2.CAP_PROP_FRAME_COUNT)), 0) or float('inf')  # infinite stream fallback
-
             _, self.imgs[i] = cap.read()  # guarantee first frame
             self.threads[i] = Thread(target=self.update, args=([i, cap, s]), daemon=True)
             print(f" success ({self.frames[i]} frames {w}x{h} at {self.fps[i]:.2f} FPS)")

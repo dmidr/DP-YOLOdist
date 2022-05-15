@@ -317,7 +317,6 @@ def run(weights=ROOT / 'yolov5s.pt',  # model.pt path(s)
                 ctr_coords = np.zeros((bbox_coords.shape[0], 2))
                 ctr_coords[:, 0] = (bbox_coords[:, 0] + bbox_coords[:, 2]) * 0.5  # x center coords
                 ctr_coords[:, 1] = (bbox_coords[:, 1] + bbox_coords[:, 3]) * 0.5  # y center coords
-                print(ctr_coords)
                 dist[i] = np.zeros((len(bbox_coords), 1))
                 dist[i] = stereo.distance(imstereo[i], ctr_coords, dist[i])
                 dist[i] = np.flip(dist[i])
