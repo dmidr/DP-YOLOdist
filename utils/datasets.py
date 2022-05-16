@@ -221,8 +221,6 @@ class LoadImages:
             assert img0 is not None, 'Image Not Found ' + path
             print(f'image {self.count}/{self.nf} {path}: ', end='')
 
-        img = np.zeros(img0.shape)
-
         # Get only left image for inference
         img = np.split(img0, 2, axis=1)[0]
 
@@ -313,10 +311,10 @@ class LoadStreams:
             s = eval(s) if s.isnumeric() else s  # i.e. s = '0' local webcam
             cap = cv2.VideoCapture(s)
             assert cap.isOpened(), f'Failed to open {s}'
-            cap.set(cv2.CAP_PROP_FRAME_WIDTH,2560)
-            cap.set(cv2.CAP_PROP_FRAME_HEIGHT,720)
             w = 2560  #int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
             h = 720  #int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+            cap.set(cv2.CAP_PROP_FRAME_WIDTH,w)
+            cap.set(cv2.CAP_PROP_FRAME_HEIGHT,h)
             self.fps[i] = 30  # max(cap.get(cv2.CAP_PROP_FPS) % 100, 0) or 10.0  # 10 FPS fallback
             self.frames[i] = max(int(cap.get(cv2.CAP_PROP_FRAME_COUNT)), 0) or float('inf')  # infinite stream fallback
             _, self.imgs[i] = cap.read()  # guarantee first frame
