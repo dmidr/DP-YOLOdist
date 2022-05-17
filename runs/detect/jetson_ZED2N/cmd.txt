@@ -1,0 +1,80 @@
+python3 detectdist.py --source 0 --weights best_nano.pt --conf-thres 0.4 --save-txt --save-conf --name jetson_ZED2N
+detectdist: weights=['best_nano.pt'], source=0, imgsz=[640, 640], conf_thres=0.4, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=True, save_conf=True, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=runs/detect, name=jetson_ZED2N, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False
+/home/danielm/.local/lib/python3.6/site-packages/pkg_resources/__init__.py:119: PkgResourcesDeprecationWarning: 0.18ubuntu0.18.04.1 is an invalid version and will not be supported in a future release
+  PkgResourcesDeprecationWarning,
+requirements: opencv-contrib-python>=4.1.2 not found and is required by YOLOv5, attempting auto-update...
+  Could not find a version that satisfies the requirement opencv-contrib-python>=4.1.2 (from versions: )
+No matching distribution found for opencv-contrib-python>=4.1.2
+requirements: Command 'pip install 'opencv-contrib-python>=4.1.2'' returned non-zero exit status 1.
+requirements: pandas>=1.1.4 not found and is required by YOLOv5, attempting auto-update...
+  Could not find a version that satisfies the requirement pandas>=1.1.4 (from versions: 0.1, 0.2, 0.3.0, 0.4.0, 0.4.1, 0.4.2, 0.4.3, 0.5.0, 0.6.0, 0.6.1, 0.7.0, 0.7.1, 0.7.2, 0.7.3, 0.8.0, 0.8.1, 0.9.0, 0.9.1, 0.10.0, 0.10.1, 0.11.0, 0.12.0, 0.13.0, 0.13.1, 0.14.0, 0.14.1, 0.15.0, 0.15.1, 0.15.2, 0.16.0, 0.16.1, 0.16.2, 0.17.0, 0.17.1, 0.18.0, 0.18.1, 0.19.0, 0.19.1, 0.19.2, 0.20.0, 0.20.1, 0.20.2, 0.20.3, 0.21.0, 0.21.1, 0.22.0, 0.23.0, 0.23.1, 0.23.2, 0.23.3, 0.23.4, 0.24.0, 0.24.1, 0.24.2)
+No matching distribution found for pandas>=1.1.4
+requirements: Command 'pip install 'pandas>=1.1.4'' returned non-zero exit status 1.
+requirements: seaborn>=0.11.0 not found and is required by YOLOv5, attempting auto-update...
+  Could not find a version that satisfies the requirement seaborn>=0.11.0 (from versions: 0.1, 0.2.0, 0.2.1, 0.3, 0.3.1, 0.4.0, 0.5.0, 0.5.1, 0.6.0, 0.7.0, 0.7.1, 0.8, 0.8.1, 0.9.0, 0.9.1rc0, 0.9.1)
+No matching distribution found for seaborn>=0.11.0
+requirements: Command 'pip install 'seaborn>=0.11.0'' returned non-zero exit status 1.
+YOLOv5 🚀 2022-5-16 torch 1.10.0 CUDA:0 (NVIDIA Tegra X1, 3956MiB)
+
+Fusing layers... 
+Model Summary: 213 layers, 1772695 parameters, 0 gradients
+[ WARN:0] global /home/danielm/opencv/modules/videoio/src/cap_gstreamer.cpp (1100) open OpenCV | GStreamer warning: Cannot query video position: status=0, value=-1, duration=-1
+1/1: 0...  success (inf frames 2560x720 at 30.00 FPS)
+
+Calibration file found. Loading...
+0: 384x640 1 T_light, Done. (det: 1.069 s, dist: 1.786 s)
+0: 384x640 1 T_light, Done. (det: 0.107 s, dist: 1.571 s)
+0: 384x640 1 T_light, Done. (det: 0.111 s, dist: 1.533 s)
+0: 384x640 1 T_light, Done. (det: 0.116 s, dist: 1.467 s)
+0: 384x640 1 T_light, Done. (det: 0.125 s, dist: 1.457 s)
+0: 384x640 1 T_light, Done. (det: 0.112 s, dist: 1.460 s)
+0: 384x640 1 T_light, Done. (det: 0.177 s, dist: 1.529 s)
+0: 384x640 1 T_light, Done. (det: 0.110 s, dist: 1.529 s)
+0: 384x640 1 T_light, Done. (det: 0.128 s, dist: 1.527 s)
+0: 384x640 1 T_light, Done. (det: 0.138 s, dist: 1.526 s)
+0: 384x640 1 T_light, Done. (det: 0.151 s, dist: 1.526 s)
+0: 384x640 1 T_light, Done. (det: 0.124 s, dist: 1.537 s)
+0: 384x640 1 T_light, Done. (det: 0.093 s, dist: 1.542 s)
+0: 384x640 1 T_light, Done. (det: 0.129 s, dist: 1.526 s)
+0: 384x640 1 Pedestrian, 1 T_light, Done. (det: 0.140 s, dist: 1.525 s)
+0: 384x640 1 Pedestrian, 1 T_light, Done. (det: 0.124 s, dist: 1.527 s)
+0: 384x640 1 Pedestrian, 1 T_light, Done. (det: 0.165 s, dist: 1.527 s)
+0: 384x640 1 Pedestrian, 1 T_light, Done. (det: 0.119 s, dist: 1.526 s)
+0: 384x640 1 Pedestrian, 1 T_light, Done. (det: 0.135 s, dist: 1.524 s)
+0: 384x640 1 T_light, Done. (det: 0.073 s, dist: 1.525 s)
+0: 384x640 1 T_light, Done. (det: 0.141 s, dist: 1.527 s)
+0: 384x640 1 T_light, Done. (det: 0.145 s, dist: 1.524 s)
+0: 384x640 1 T_light, Done. (det: 0.132 s, dist: 1.527 s)
+0: 384x640 1 Car, 1 T_light, Done. (det: 0.118 s, dist: 1.524 s)
+0: 384x640 1 T_light, Done. (det: 0.125 s, dist: 1.526 s)
+0: 384x640 1 T_light, Done. (det: 0.146 s, dist: 1.528 s)
+0: 384x640 1 T_light, Done. (det: 0.137 s, dist: 1.525 s)
+0: 384x640 1 T_light, Done. (det: 0.125 s, dist: 1.547 s)
+0: 384x640 1 T_light, Done. (det: 0.079 s, dist: 1.530 s)
+0: 384x640 1 Pedestrian, 1 T_light, Done. (det: 0.125 s, dist: 1.526 s)
+0: 384x640 1 T_light, Done. (det: 0.134 s, dist: 1.526 s)
+0: 384x640 1 T_light, Done. (det: 0.116 s, dist: 1.528 s)
+0: 384x640 1 T_light, Done. (det: 0.159 s, dist: 1.532 s)
+0: 384x640 1 T_light, Done. (det: 0.119 s, dist: 1.529 s)
+0: 384x640 1 T_light, Done. (det: 0.151 s, dist: 1.539 s)
+0: 384x640 1 T_light, Done. (det: 0.130 s, dist: 1.529 s)
+0: 384x640 1 T_light, Done. (det: 0.114 s, dist: 1.529 s)
+0: 384x640 1 T_light, Done. (det: 0.114 s, dist: 1.525 s)
+0: 384x640 1 T_light, Done. (det: 0.129 s, dist: 1.527 s)
+0: 384x640 1 T_light, Done. (det: 0.120 s, dist: 1.524 s)
+0: 384x640 1 T_light, Done. (det: 0.094 s, dist: 1.590 s)
+0: 384x640 1 T_light, Done. (det: 0.156 s, dist: 1.559 s)
+^C^CTraceback (most recent call last):
+  File "detectdist.py", line 468, in <module>
+    main(opt)
+  File "detectdist.py", line 463, in main
+    run(**vars(opt))
+  File "/home/danielm/.local/lib/python3.6/site-packages/torch/autograd/grad_mode.py", line 28, in decorate_context
+    return func(*args, **kwargs)
+  File "detectdist.py", line 321, in run
+    dist[i] = stereo.distance(imstereo[i], ctr_coords, dist[i])
+  File "detectdist.py", line 91, in distance
+    disparity_R = self.stereoProcessor_R.compute(grayR, grayL).astype(np.float32)/16
+KeyboardInterrupt
+FATAL: exception not rethrown
+Aborted (core dumped)

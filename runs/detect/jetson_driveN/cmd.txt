@@ -1,0 +1,31 @@
+python3 detectdist.py --source "data/images/drive" --weights best_nano.pt --conf-thres 0.4 --save-txt --save-conf --name jetson_driveN
+detectdist: weights=['best_nano.pt'], source=data/images/drive, imgsz=[640, 640], conf_thres=0.4, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=True, save_conf=True, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=runs/detect, name=jetson_driveN, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False
+/home/danielm/.local/lib/python3.6/site-packages/pkg_resources/__init__.py:119: PkgResourcesDeprecationWarning: 0.18ubuntu0.18.04.1 is an invalid version and will not be supported in a future release
+  PkgResourcesDeprecationWarning,
+requirements: opencv-contrib-python>=4.1.2 not found and is required by YOLOv5, attempting auto-update...
+  Could not find a version that satisfies the requirement opencv-contrib-python>=4.1.2 (from versions: )
+No matching distribution found for opencv-contrib-python>=4.1.2
+requirements: Command 'pip install 'opencv-contrib-python>=4.1.2'' returned non-zero exit status 1.
+requirements: pandas>=1.1.4 not found and is required by YOLOv5, attempting auto-update...
+  Could not find a version that satisfies the requirement pandas>=1.1.4 (from versions: 0.1, 0.2, 0.3.0, 0.4.0, 0.4.1, 0.4.2, 0.4.3, 0.5.0, 0.6.0, 0.6.1, 0.7.0, 0.7.1, 0.7.2, 0.7.3, 0.8.0, 0.8.1, 0.9.0, 0.9.1, 0.10.0, 0.10.1, 0.11.0, 0.12.0, 0.13.0, 0.13.1, 0.14.0, 0.14.1, 0.15.0, 0.15.1, 0.15.2, 0.16.0, 0.16.1, 0.16.2, 0.17.0, 0.17.1, 0.18.0, 0.18.1, 0.19.0, 0.19.1, 0.19.2, 0.20.0, 0.20.1, 0.20.2, 0.20.3, 0.21.0, 0.21.1, 0.22.0, 0.23.0, 0.23.1, 0.23.2, 0.23.3, 0.23.4, 0.24.0, 0.24.1, 0.24.2)
+No matching distribution found for pandas>=1.1.4
+requirements: Command 'pip install 'pandas>=1.1.4'' returned non-zero exit status 1.
+requirements: seaborn>=0.11.0 not found and is required by YOLOv5, attempting auto-update...
+  Could not find a version that satisfies the requirement seaborn>=0.11.0 (from versions: 0.1, 0.2.0, 0.2.1, 0.3, 0.3.1, 0.4.0, 0.5.0, 0.5.1, 0.6.0, 0.7.0, 0.7.1, 0.8, 0.8.1, 0.9.0, 0.9.1rc0, 0.9.1)
+No matching distribution found for seaborn>=0.11.0
+requirements: Command 'pip install 'seaborn>=0.11.0'' returned non-zero exit status 1.
+YOLOv5 🚀 2022-5-16 torch 1.10.0 CUDA:0 (NVIDIA Tegra X1, 3956MiB)
+
+Fusing layers... 
+Model Summary: 213 layers, 1772695 parameters, 0 gradients
+Calibration file found. Loading...
+384x640 1 Car, 1 Bus, 1 Truck, 1 T_sign, Done. (det: 2.190 s, dist: 2.184 s)
+384x640 5 Cars, 1 Truck, 3 T_lights, 1 T_sign, Done. (det: 1.650 s, dist: 1.824 s)
+384x640 7 Cars, 2 T_signs, Done. (det: 0.182 s, dist: 1.398 s)
+384x640 1 Rider, 2 Cars, 1 Motorcycle, 3 T_signs, Done. (det: 0.239 s, dist: 1.370 s)
+384x640 2 Cars, 1 Truck, 2 T_lights, 2 T_signs, Done. (det: 0.216 s, dist: 1.384 s)
+384x640 3 Cars, 2 Buss, Done. (det: 0.159 s, dist: 1.364 s)
+Speed: 137.3ms pre-process, 772.7ms inference, 307.5ms NMS, 1587.2ms depth per image at shape (1, 3, 640, 640)
+Results saved to runs/detect/jetson_driveN
+6 labels saved to runs/detect/jetson_driveN/labels
+

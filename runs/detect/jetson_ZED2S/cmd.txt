@@ -1,0 +1,92 @@
+python3 detectdist.py --source 0 --weights best.pt --conf-thres 0.4 --save-txt --save-conf --name jetson_ZED2S
+detectdist: weights=['best.pt'], source=0, imgsz=[640, 640], conf_thres=0.4, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=True, save_conf=True, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=runs/detect, name=jetson_ZED2S, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False
+/home/danielm/.local/lib/python3.6/site-packages/pkg_resources/__init__.py:119: PkgResourcesDeprecationWarning: 0.18ubuntu0.18.04.1 is an invalid version and will not be supported in a future release
+  PkgResourcesDeprecationWarning,
+requirements: opencv-contrib-python>=4.1.2 not found and is required by YOLOv5, attempting auto-update...
+  Could not find a version that satisfies the requirement opencv-contrib-python>=4.1.2 (from versions: )
+No matching distribution found for opencv-contrib-python>=4.1.2
+requirements: Command 'pip install 'opencv-contrib-python>=4.1.2'' returned non-zero exit status 1.
+requirements: pandas>=1.1.4 not found and is required by YOLOv5, attempting auto-update...
+  Could not find a version that satisfies the requirement pandas>=1.1.4 (from versions: 0.1, 0.2, 0.3.0, 0.4.0, 0.4.1, 0.4.2, 0.4.3, 0.5.0, 0.6.0, 0.6.1, 0.7.0, 0.7.1, 0.7.2, 0.7.3, 0.8.0, 0.8.1, 0.9.0, 0.9.1, 0.10.0, 0.10.1, 0.11.0, 0.12.0, 0.13.0, 0.13.1, 0.14.0, 0.14.1, 0.15.0, 0.15.1, 0.15.2, 0.16.0, 0.16.1, 0.16.2, 0.17.0, 0.17.1, 0.18.0, 0.18.1, 0.19.0, 0.19.1, 0.19.2, 0.20.0, 0.20.1, 0.20.2, 0.20.3, 0.21.0, 0.21.1, 0.22.0, 0.23.0, 0.23.1, 0.23.2, 0.23.3, 0.23.4, 0.24.0, 0.24.1, 0.24.2)
+No matching distribution found for pandas>=1.1.4
+requirements: Command 'pip install 'pandas>=1.1.4'' returned non-zero exit status 1.
+requirements: seaborn>=0.11.0 not found and is required by YOLOv5, attempting auto-update...
+  Could not find a version that satisfies the requirement seaborn>=0.11.0 (from versions: 0.1, 0.2.0, 0.2.1, 0.3, 0.3.1, 0.4.0, 0.5.0, 0.5.1, 0.6.0, 0.7.0, 0.7.1, 0.8, 0.8.1, 0.9.0, 0.9.1rc0, 0.9.1)
+No matching distribution found for seaborn>=0.11.0
+requirements: Command 'pip install 'seaborn>=0.11.0'' returned non-zero exit status 1.
+YOLOv5 🚀 2022-5-16 torch 1.10.0 CUDA:0 (NVIDIA Tegra X1, 3956MiB)
+
+Fusing layers... 
+Model Summary: 213 layers, 7037095 parameters, 0 gradients
+[ WARN:0] global /home/danielm/opencv/modules/videoio/src/cap_gstreamer.cpp (1100) open OpenCV | GStreamer warning: Cannot query video position: status=0, value=-1, duration=-1
+1/1: 0...  success (inf frames 2560x720 at 30.00 FPS)
+
+Calibration file found. Loading...
+0: 384x640 Done. (det: 1.938 s, dist: 2.034 s)
+0: 384x640 Done. (det: 0.186 s, dist: 1.656 s)
+0: 384x640 Done. (det: 1.182 s, dist: 1.710 s)
+0: 384x640 Done. (det: 0.239 s, dist: 1.557 s)
+0: 384x640 Done. (det: 0.194 s, dist: 1.585 s)
+0: 384x640 Done. (det: 0.290 s, dist: 1.608 s)
+0: 384x640 Done. (det: 0.102 s, dist: 1.587 s)
+0: 384x640 Done. (det: 0.199 s, dist: 1.631 s)
+0: 384x640 Done. (det: 0.101 s, dist: 1.549 s)
+0: 384x640 Done. (det: 0.263 s, dist: 1.573 s)
+0: 384x640 Done. (det: 0.174 s, dist: 1.520 s)
+0: 384x640 Done. (det: 0.210 s, dist: 1.504 s)
+0: 384x640 Done. (det: 0.210 s, dist: 1.545 s)
+0: 384x640 Done. (det: 0.198 s, dist: 1.558 s)
+0: 384x640 Done. (det: 0.197 s, dist: 1.520 s)
+0: 384x640 Done. (det: 0.225 s, dist: 1.570 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.191 s, dist: 1.564 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.218 s, dist: 1.500 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.204 s, dist: 1.557 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.174 s, dist: 1.500 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.217 s, dist: 1.499 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.147 s, dist: 1.498 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.169 s, dist: 1.504 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.227 s, dist: 1.563 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.226 s, dist: 1.502 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.190 s, dist: 1.500 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.183 s, dist: 1.502 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.177 s, dist: 1.505 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.173 s, dist: 1.540 s)
+0: 384x640 Done. (det: 0.181 s, dist: 1.576 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.204 s, dist: 1.538 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.262 s, dist: 1.544 s)
+0: 384x640 Done. (det: 0.192 s, dist: 1.541 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.218 s, dist: 1.544 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.186 s, dist: 1.548 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.239 s, dist: 1.544 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.213 s, dist: 1.545 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.197 s, dist: 1.540 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.235 s, dist: 1.540 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.221 s, dist: 1.543 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.195 s, dist: 1.542 s)
+0: 384x640 Done. (det: 0.209 s, dist: 1.542 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.205 s, dist: 1.543 s)
+0: 384x640 Done. (det: 0.174 s, dist: 1.538 s)
+0: 384x640 Done. (det: 0.217 s, dist: 1.540 s)
+0: 384x640 Done. (det: 0.188 s, dist: 1.544 s)
+0: 384x640 Done. (det: 0.222 s, dist: 1.545 s)
+0: 384x640 Done. (det: 0.152 s, dist: 1.563 s)
+0: 384x640 Done. (det: 0.198 s, dist: 1.546 s)
+0: 384x640 Done. (det: 0.183 s, dist: 1.574 s)
+0: 384x640 Done. (det: 0.226 s, dist: 1.552 s)
+0: 384x640 Done. (det: 0.162 s, dist: 1.582 s)
+0: 384x640 Done. (det: 0.209 s, dist: 1.561 s)
+0: 384x640 Done. (det: 0.170 s, dist: 1.542 s)
+0: 384x640 Done. (det: 0.200 s, dist: 1.681 s)
+0: 384x640 Done. (det: 0.189 s, dist: 1.585 s)
+0: 384x640 Done. (det: 0.171 s, dist: 1.589 s)
+[ WARN:1] global /home/danielm/opencv/modules/videoio/src/cap_gstreamer.cpp (624) isPipelinePlaying OpenCV | GStreamer warning: unable to query pipeline state
+[ WARN:1] global /home/danielm/opencv/modules/videoio/src/cap_gstreamer.cpp (2076) handleMessage OpenCV | GStreamer warning: Embedded video playback halted; module v4l2src0 reported: Could not read from resource.
+0: 384x640 Done. (det: 0.103 s, dist: 1.612 s)
+[ WARN:1] global /home/danielm/opencv/modules/videoio/src/cap_gstreamer.cpp (2076) handleMessage OpenCV | GStreamer warning: Embedded video playback halted; module v4l2src0 reported: Cannot identify device '/dev/video0'.
+[ WARN:1] global /home/danielm/opencv/modules/videoio/src/cap_gstreamer.cpp (651) startPipeline OpenCV | GStreamer warning: unable to start pipeline
+[ WARN:1] global /home/danielm/opencv/modules/videoio/src/cap_gstreamer.cpp (616) isPipelinePlaying OpenCV | GStreamer warning: GStreamer: pipeline have not been created
+0: 384x640 Done. (det: 0.169 s, dist: 1.635 s)
+Speed: 22.5ms pre-process, 242.2ms inference, 27.7ms NMS, 1563.7ms depth per image at shape (1, 3, 640, 640)
+Results saved to runs/detect/jetson_ZED2S
+24 labels saved to runs/detect/jetson_ZED2S/labels
+

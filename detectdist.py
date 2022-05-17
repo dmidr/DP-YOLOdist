@@ -45,7 +45,7 @@ class Resolution:
 
 class Stereo:
     def __init__(self):
-        calibration_file = "SN24759.conf"  # download_calibration_file(serial_number)
+        calibration_file = "SN24759.conf"  # SN27519842.conf / SN24759.conf
         if calibration_file == "":
             exit(1)
         print("Calibration file found. Loading...")

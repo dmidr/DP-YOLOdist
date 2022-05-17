@@ -1,0 +1,92 @@
+python3 detectdist.py --source 0 --weights best.pt --conf-thres 0.4 --save-txt --save-conf --name jetson_ZEDS
+detectdist: weights=['best.pt'], source=0, imgsz=[640, 640], conf_thres=0.4, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=True, save_conf=True, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=runs/detect, name=jetson_ZEDS, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False
+/home/danielm/.local/lib/python3.6/site-packages/pkg_resources/__init__.py:119: PkgResourcesDeprecationWarning: 0.18ubuntu0.18.04.1 is an invalid version and will not be supported in a future release
+  PkgResourcesDeprecationWarning,
+requirements: opencv-contrib-python>=4.1.2 not found and is required by YOLOv5, attempting auto-update...
+  Could not find a version that satisfies the requirement opencv-contrib-python>=4.1.2 (from versions: )
+No matching distribution found for opencv-contrib-python>=4.1.2
+requirements: Command 'pip install 'opencv-contrib-python>=4.1.2'' returned non-zero exit status 1.
+requirements: pandas>=1.1.4 not found and is required by YOLOv5, attempting auto-update...
+  Could not find a version that satisfies the requirement pandas>=1.1.4 (from versions: 0.1, 0.2, 0.3.0, 0.4.0, 0.4.1, 0.4.2, 0.4.3, 0.5.0, 0.6.0, 0.6.1, 0.7.0, 0.7.1, 0.7.2, 0.7.3, 0.8.0, 0.8.1, 0.9.0, 0.9.1, 0.10.0, 0.10.1, 0.11.0, 0.12.0, 0.13.0, 0.13.1, 0.14.0, 0.14.1, 0.15.0, 0.15.1, 0.15.2, 0.16.0, 0.16.1, 0.16.2, 0.17.0, 0.17.1, 0.18.0, 0.18.1, 0.19.0, 0.19.1, 0.19.2, 0.20.0, 0.20.1, 0.20.2, 0.20.3, 0.21.0, 0.21.1, 0.22.0, 0.23.0, 0.23.1, 0.23.2, 0.23.3, 0.23.4, 0.24.0, 0.24.1, 0.24.2)
+No matching distribution found for pandas>=1.1.4
+requirements: Command 'pip install 'pandas>=1.1.4'' returned non-zero exit status 1.
+requirements: seaborn>=0.11.0 not found and is required by YOLOv5, attempting auto-update...
+  Could not find a version that satisfies the requirement seaborn>=0.11.0 (from versions: 0.1, 0.2.0, 0.2.1, 0.3, 0.3.1, 0.4.0, 0.5.0, 0.5.1, 0.6.0, 0.7.0, 0.7.1, 0.8, 0.8.1, 0.9.0, 0.9.1rc0, 0.9.1)
+No matching distribution found for seaborn>=0.11.0
+requirements: Command 'pip install 'seaborn>=0.11.0'' returned non-zero exit status 1.
+YOLOv5 🚀 2022-5-16 torch 1.10.0 CUDA:0 (NVIDIA Tegra X1, 3956MiB)
+
+Fusing layers... 
+Model Summary: 213 layers, 7037095 parameters, 0 gradients
+[ WARN:0] global /home/danielm/opencv/modules/videoio/src/cap_gstreamer.cpp (1100) open OpenCV | GStreamer warning: Cannot query video position: status=0, value=-1, duration=-1
+1/1: 0...  success (inf frames 2560x720 at 30.00 FPS)
+
+Calibration file found. Loading...
+0: 384x640 1 Car, Done. (det: 2.623 s, dist: 2.260 s)
+0: 384x640 1 Car, Done. (det: 2.381 s, dist: 1.936 s)
+0: 384x640 1 Car, Done. (det: 0.261 s, dist: 1.477 s)
+0: 384x640 1 Car, Done. (det: 0.305 s, dist: 1.520 s)
+0: 384x640 1 Car, Done. (det: 0.296 s, dist: 1.486 s)
+0: 384x640 1 Car, Done. (det: 0.254 s, dist: 1.485 s)
+0: 384x640 1 Car, Done. (det: 0.287 s, dist: 1.495 s)
+0: 384x640 3 Cars, Done. (det: 0.218 s, dist: 1.501 s)
+0: 384x640 Done. (det: 0.273 s, dist: 1.483 s)
+0: 384x640 Done. (det: 0.192 s, dist: 1.498 s)
+0: 384x640 Done. (det: 0.212 s, dist: 1.629 s)
+0: 384x640 Done. (det: 0.216 s, dist: 1.495 s)
+0: 384x640 Done. (det: 0.199 s, dist: 1.495 s)
+0: 384x640 Done. (det: 0.213 s, dist: 1.497 s)
+0: 384x640 Done. (det: 0.248 s, dist: 1.498 s)
+0: 384x640 Done. (det: 0.216 s, dist: 1.505 s)
+0: 384x640 Done. (det: 0.185 s, dist: 1.531 s)
+0: 384x640 Done. (det: 0.170 s, dist: 1.493 s)
+0: 384x640 Done. (det: 0.182 s, dist: 1.492 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.167 s, dist: 1.492 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.274 s, dist: 1.492 s)
+0: 384x640 Done. (det: 0.191 s, dist: 1.492 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.214 s, dist: 1.495 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.168 s, dist: 1.522 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.281 s, dist: 1.494 s)
+0: 384x640 1 Pedestrian, 1 Car, Done. (det: 0.166 s, dist: 1.500 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.202 s, dist: 1.495 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.195 s, dist: 1.494 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.225 s, dist: 1.494 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.207 s, dist: 1.494 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.168 s, dist: 1.495 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.269 s, dist: 1.493 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.227 s, dist: 1.494 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.222 s, dist: 1.493 s)
+0: 384x640 Done. (det: 0.213 s, dist: 1.499 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.290 s, dist: 1.492 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.181 s, dist: 1.491 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.257 s, dist: 1.491 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.207 s, dist: 1.493 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.256 s, dist: 1.522 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.242 s, dist: 1.493 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.223 s, dist: 1.495 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.190 s, dist: 1.519 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.197 s, dist: 1.493 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.222 s, dist: 1.493 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.212 s, dist: 1.491 s)
+0: 384x640 Done. (det: 0.196 s, dist: 1.491 s)
+0: 384x640 1 Pedestrian, Done. (det: 0.178 s, dist: 1.492 s)
+0: 384x640 Done. (det: 0.193 s, dist: 1.493 s)
+0: 384x640 Done. (det: 0.240 s, dist: 1.505 s)
+0: 384x640 Done. (det: 0.194 s, dist: 1.491 s)
+0: 384x640 Done. (det: 0.221 s, dist: 1.506 s)
+0: 384x640 1 Car, Done. (det: 0.197 s, dist: 1.545 s)
+^CTraceback (most recent call last):
+  File "detectdist.py", line 468, in <module>
+    main(opt)
+  File "detectdist.py", line 463, in main
+    run(**vars(opt))
+  File "/home/danielm/.local/lib/python3.6/site-packages/torch/autograd/grad_mode.py", line 28, in decorate_context
+    return func(*args, **kwargs)
+  File "detectdist.py", line 321, in run
+    dist[i] = stereo.distance(imstereo[i], ctr_coords, dist[i])
+  File "detectdist.py", line 91, in distance
+    disparity_R = self.stereoProcessor_R.compute(grayR, grayL).astype(np.float32)/16
+KeyboardInterrupt
+terminate called without an active exception
+Aborted (core dumped)
+
